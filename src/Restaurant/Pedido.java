@@ -30,22 +30,23 @@ public class Pedido {
         mercancia.actualizarExistencia(cantidadRecibida, fechaLlegada);
     }
 
+
     @Override
     public String toString() {
 
         String llegada;
 
         if (fechaLlegada == null) {
-            llegada = "Restaurant.Pedido aún no recibido";
+            llegada = "Pedido aún no recibido";
         } else {
             llegada = fechaLlegada.toString();
         }
 
-        return "Restaurant.Pedido{" +
-                "cantidadPedido=" + cantidadPedido +
-                ", fechaPedido=" + fechaPedido +
-                ", fechaLlegada=" + llegada +
-                "\n proveedor=" + proveedor +
-                '}';
+        return "Pedido{ " +
+                "cantidad de pedido= " + cantidadPedido +
+                ", fecha del pedido= " + fechaPedido +
+                ", fecha de llegada= " + llegada +
+                "\n" + proveedor +
+                " }\n";
     }
 }

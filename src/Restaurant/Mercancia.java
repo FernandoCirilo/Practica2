@@ -24,13 +24,16 @@ public class Mercancia {
         existencia += cantidad;
         fechaEntrada = fechaLlegada;
     }
+    public boolean setPuntoDeReorden(){
+        return existencia <= puntoDeReorden;
+    }
     @Override
     public String toString() {
-        return "Restaurant.Mercancia{" +
-                "nombre='" + nombre + '\'' +
-                ", existencia=" + existencia +
-                ", fechaEntrada=" + fechaEntrada +
-                ", puntoDeReorden=" + puntoDeReorden +
-                '}';
+        return "Mercancia{ " +
+                "nombre= " + nombre +
+                ", existencia= " + existencia +
+                ", fecha de entrada= " + fechaEntrada +
+                ", punto de reorden= " + puntoDeReorden +
+                " }\n";
     }
 }

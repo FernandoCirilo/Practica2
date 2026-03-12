@@ -1,5 +1,4 @@
 package Restaurant;
-
 public class Proveedor {
     private String nombre;
     private int telefono;
@@ -17,10 +16,10 @@ public class Proveedor {
 
     @Override
     public String toString() {
-        return "Restaurant.Proveedor{" +
-                "nombre='" + nombre + '\'' +
-                ", telefono=" + telefono +
-                ", direccion='" + direccion + '\'' +
-                '}';
+        return "Proveedor{ " +
+                "nombre= " + nombre +
+                ", telefono= " + telefono +
+                ", direccion= " + direccion +
+                " }\n";
     }
 }
